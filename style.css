@@ -1,0 +1,515 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Museo Sans 500', sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+
+
+
+
+/* Font */
+@font-face {
+    font-family: 'Museo Sans 500';
+    src: url('./fonts/MuseoSans-500.eot');
+    src: url('./fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'), url('./fonts/MuseoSans-500.woff2') format('woff2'), url('./fonts/MuseoSans-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Header & Nav */
+
+
+/* top-header*/
+#top-header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #2b3947;
+
+}
+
+#top-header li:last-child{
+    margin-right: 15px;
+}
+
+/*top-header linkleri*/
+
+#top-header li a{
+    padding: 5px 8px;
+    font-size: 11px;
+    color: #C3CBD7;
+    cursor: pointer;
+}
+
+#top-header li a:hover{
+    color: #70AB81;
+}
+
+#top-header li::after{
+    content: " ";
+    border-right: 1px dotted #C3CBD7;
+}
+
+/* top-header'da istenmeyen border'ı siler */
+
+#top-header li:last-child::after{
+    content: none;
+}
+
+/* top-header iconları */
+#top-header i{
+    color: white;
+    margin: 0 2px;
+}
+
+/* Navbar */
+nav{
+    height: 60px;
+    background-color: #232B38;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Left Nav */
+#left-nav{
+    display: flex;
+    margin-left: 25px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+#logo img{
+    height: 40px
+}
+
+#main-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+
+}
+
+#main-nav li a{
+    color: #fff;
+    padding: 21px;
+}
+
+#main-nav li a:hover{
+    background-color: rgba(0,0,0,.25);
+    box-shadow: 0 3px 0 rgb(239 38 54);
+}
+
+#main-nav li::after{
+    content: " ";
+    border-right: 1px dotted #C3CBD7;
+}
+
+/* main-nav'da istenmeyen border'ları siler */
+
+#main-nav li:nth-child(4):after{
+    content: none;
+}
+
+#main-nav li:last-child::after{
+    content: none;
+}
+
+/* user button */
+
+#user{
+    border: 1px solid #fff;
+    border-radius: 60px;
+    background-color:#232B38;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Museo Sans 700',sans-serif;
+    font-weight: 700;
+    padding: 8px 15px;
+    
+}
+
+#user:hover{
+    background-color: rgba(255,255,255,.15);
+    border-color: rgba(255,255,255,1);
+    border-bottom-style: solid;
+}
+
+/* middle section */
+#main-container{
+    background-color: #232B38;
+    height: 539.5px;
+    padding: 30px 0;
+    background-image: url("https://cdn.turkishairlines.com/m/3c9fb6f3e9aefa19/original/1400x600-bookerv2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.middle-wrapper{
+    width: 1024px;
+    height: 478.5px;
+    margin: 0 auto;
+}
+
+/* headers */
+h1,h2{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 38px;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 41.8px;
+}
+
+h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* trio anchors */
+#trio-anchor{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#trio-anchor a{
+    font-size: 15px;
+    font-family: 'Museo Sans 300', sans-serif;
+    color: #fff;
+    padding: 11.25px 25px;
+    background-color: rgba(35,43,56,.25);
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 4px;
+}
+
+#trio-anchor a:nth-child(2){
+    margin: 0 5px;
+}
+
+#center-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+    padding: 10px 28px;
+    background-color: #232B3799;
+    margin-bottom: 40px;
+}
+
+/* radio wrapper */
+#radio-wrapper{
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+
+}
+
+form{
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+}
+
+form div{
+    margin: 0px 0px 10px 10px;
+}
+
+form div:first-child{
+    margin: 0;
+}
+
+
+#checkBox{
+    display: flex;
+}
+
+#checkBox{
+    padding: 5px 5px 5px 24px;
+}
+
+#checkBox input{
+    margin-right: 5px;
+}
+
+/* from to where */
+#fromToWhere{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* from */
+
+#from{
+    display: flex;
+}
+
+#fromSpan{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 6px 0 6px 4px;
+    align-items: start;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+#fromSpan span:first-child{
+    color: #2073E3;
+    flex-grow: 1;
+}
+
+#fromSpan span:nth-child(2){
+    flex-grow: 3;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#fromSpan span:last-child{
+    flex-grow: 1;
+    color: #697886;
+    font-weight: 200;
+}
+
+.from-to-where{
+    width: 266.5px;
+    height: 85px;
+    background-color: #fff;
+    color: #232b38;
+}
+
+.from-to-where div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 100%;
+}
+
+.from-to-where div i{
+    font-size: 1.5rem;
+}
+
+.gray-box{
+    width: 148px;
+    height: 85px;
+    background-color: #232B38;
+}
+
+/* where */
+#where{
+    display: flex;
+}
+
+#whereSpan{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-start;
+    padding: 0 4px;
+    
+}
+
+#whereSpan span:first-child{
+    font-size: 24px;
+    color: #647286;
+}
+
+/* calendar */
+#calendar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#calendar span{
+    font-size: 24px;
+}
+
+#calendar i{
+    color: #647286;
+    font-size: 45px;
+}
+
+/* cabin */
+#cabin{
+    display: flex;
+    align-items: center;
+}
+
+/* kabin - eco - sınıf */
+
+#cabin div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#cabin div:first-child span:first-child{
+    font-size: 14px;
+    color: #647286;
+}
+
+#cabin div:first-child span:nth-child(2){
+    font-size: 30px;
+}
+
+#cabin div:first-child span:last-child{
+    font-size: 14px;
+}
+#cabin div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* person counter & person*/
+#cabin div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    color: #fff;
+}
+
+#cabin div:nth-child(2) i{
+    display: flex;
+    font-size: 40px;
+    color: #647286;
+}
+
+/* right arrow */
+#rightArrow{
+    width: 69px;
+    height: 85px;
+    background-color: #E81932;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* lower wrapper */
+#lowerWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 510px;
+    height: 101.6px;
+    margin: 0 auto;
+}
+
+.l-wrapper-box{
+    display: flex;
+    flex-direction: column;
+    width: 166.66px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.l-wrapper-box div:first-child i{
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    background-color: #232b38;
+    border-radius: 50%;
+    line-height: 2;
+    text-align: center;
+}
+
+.l-wrapper-box div:last-child{
+    width: 133.66px;
+    background-color: #101a2a;
+    color: #fff;
+    border-radius: 6%;
+    padding: 5px 6px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+/* text-box'ları hizalamak için */
+.l-wrapper-fix{
+    position: relative;
+    top: -10px;
+}
+
+hr{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 55px;
+}
+
+.pdng-5{
+    padding: 5px;
+}
+
+#sync{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -140px;
+    left: 290px;
+    width: 28px;
+    height: 28px;
+    background-color: #232B38;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
